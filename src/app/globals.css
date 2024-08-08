@@ -31,3 +31,25 @@ body {
     text-wrap: balance;
   }
 }
+
+
+.scrollbar-thin {
+  @apply overflow-y-scroll; /* or overflow-x-scroll or overflow-scroll */
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 4px; /* Width of the scrollbar */
+  height: 10px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  @apply bg-[#232528]; /* Track color */
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  @apply bg-[#37393F] rounded; /* Thumb color and rounding */
+}
+
+.scrollbar-thin:hover::-webkit-scrollbar-thumb {
+  @apply bg-[#37393F]; /* Thumb color on hover */
+}
